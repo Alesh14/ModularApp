@@ -1,7 +1,6 @@
 # Module repos (managed by RepoSync, not committed to main repo)
-ModularApp-Core-Network/
-ModularApp-Core-UI/
-ModularApp-Feature-Home/
+ModularApp-Core-*/
+ModularApp-Feature-*/
 
 # Xcode
 *.xcodeproj/xcuserdata/
