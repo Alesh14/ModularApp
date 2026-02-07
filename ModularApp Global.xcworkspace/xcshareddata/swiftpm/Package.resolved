@@ -1,6 +1,15 @@
 {
-  "originHash" : "40aaed2f87735b4ffb2f7ceafec7f392541cfc158dabfa02ea2534fb3b3a00b7",
+  "originHash" : "39c3b131719aaf4ce05caccf9345851764ff0079d95328d7e111de85f0df3113",
   "pins" : [
+    {
+      "identity" : "modularapp-core-appinitializer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alesh14/ModularApp-Core-AppInitializer",
+      "state" : {
+        "revision" : "1372fa9f74f2fd0998fdd9de0e1f4d8d44cfa450",
+        "version" : "0.0.1"
+      }
+    },
     {
       "identity" : "modularapp-core-network",
       "kind" : "remoteSourceControl",

@@ -7,6 +7,9 @@ options:
   generateEmptyDirectories: true
 
 packages:
+  SpaceCore-AppInitializer:
+    url: https://github.com/Alesh14/ModularApp-Core-AppInitializer
+    from: "0.0.1"
   CoreNetwork:
     url: https://github.com/Alesh14/ModularApp-Core-Network
     from: "0.0.1"
@@ -37,6 +40,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.alesh14.modularapp
         SWIFT_VERSION: "5.9"
     dependencies:
+      - package: SpaceCore-AppInitializer
       - package: CoreNetwork
       - package: CoreUI
       - package: FeatureHome

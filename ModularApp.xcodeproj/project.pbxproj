@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08559307109C7D6ED452C987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644CFF013D9DBF8792E7170C /* AppDelegate.swift */; };
 		1DA2FAB7EB08E567F7908B69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C2174FA5E37597D7309FBE /* ContentView.swift */; };
-		2D26A59A11A3C88C30AB9967 /* CoreUI in Frameworks */ = {isa = PBXBuildFile; productRef = 859EA341F08A96C3ACF98658 /* CoreUI */; };
-		6267F5539509D9D7EE485CC7 /* FeatureHome in Frameworks */ = {isa = PBXBuildFile; productRef = 1DF2DFED580989DDDEF94644 /* FeatureHome */; };
-		9AF78FA817CF4FDAB9F7755C /* ModularAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0287B1766CB83D3BDC70F53B /* ModularAppApp.swift */; };
-		BAD3BBD6405E4F70AFB626BE /* CoreNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 27099D77F2A95B2958EF090C /* CoreNetwork */; };
+		2D26A59A11A3C88C30AB9967 /* CoreNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 27099D77F2A95B2958EF090C /* CoreNetwork */; };
+		33A3C8E56DB9DF63B9614EA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F27DC0CD095FADA855C7F /* SceneDelegate.swift */; };
+		4E34C0B367ACCFF3936D11DA /* FeatureHome in Frameworks */ = {isa = PBXBuildFile; productRef = 1DF2DFED580989DDDEF94644 /* FeatureHome */; };
+		6267F5539509D9D7EE485CC7 /* CoreUI in Frameworks */ = {isa = PBXBuildFile; productRef = 859EA341F08A96C3ACF98658 /* CoreUI */; };
+		BAD3BBD6405E4F70AFB626BE /* SpaceCore-AppInitializer in Frameworks */ = {isa = PBXBuildFile; productRef = 9AA12F73F8E0DB19F1C7B782 /* SpaceCore-AppInitializer */; };
+		FCBC9E842E9F052A90C1350C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857904B49DCA323F5A97C244 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0287B1766CB83D3BDC70F53B /* ModularAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModularAppApp.swift; sourceTree = "<group>"; };
 		58C2174FA5E37597D7309FBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E4F27DC0CD095FADA855C7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		644CFF013D9DBF8792E7170C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D13911164C2FC24E4B54220 /* ModularApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ModularApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		857904B49DCA323F5A97C244 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,9 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAD3BBD6405E4F70AFB626BE /* CoreNetwork in Frameworks */,
-				2D26A59A11A3C88C30AB9967 /* CoreUI in Frameworks */,
-				6267F5539509D9D7EE485CC7 /* FeatureHome in Frameworks */,
+				BAD3BBD6405E4F70AFB626BE /* SpaceCore-AppInitializer in Frameworks */,
+				2D26A59A11A3C88C30AB9967 /* CoreNetwork in Frameworks */,
+				6267F5539509D9D7EE485CC7 /* CoreUI in Frameworks */,
+				4E34C0B367ACCFF3936D11DA /* FeatureHome in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +59,10 @@
 		843498A29BCBA14656CEE427 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				644CFF013D9DBF8792E7170C /* AppDelegate.swift */,
 				58C2174FA5E37597D7309FBE /* ContentView.swift */,
-				0287B1766CB83D3BDC70F53B /* ModularAppApp.swift */,
+				857904B49DCA323F5A97C244 /* main.swift */,
+				5E4F27DC0CD095FADA855C7F /* SceneDelegate.swift */,
 			);
 			name = Sources;
 			path = ModularApp/Sources;
@@ -76,6 +84,7 @@
 			);
 			name = ModularApp;
 			packageProductDependencies = (
+				9AA12F73F8E0DB19F1C7B782 /* SpaceCore-AppInitializer */,
 				27099D77F2A95B2958EF090C /* CoreNetwork */,
 				859EA341F08A96C3ACF98658 /* CoreUI */,
 				1DF2DFED580989DDDEF94644 /* FeatureHome */,
@@ -108,6 +117,7 @@
 				A2B8E5BFE80D84CA165B509B /* XCRemoteSwiftPackageReference "ModularApp-Core-UI" */,
 				8229AEFA8FC682F3048D3995 /* XCRemoteSwiftPackageReference "ModularApp-Feature-Home" */,
 				E0C21116B36745EE031CBC71 /* XCRemoteSwiftPackageReference "RepoSync" */,
+				923F42FC4446649943F8207E /* XCRemoteSwiftPackageReference "ModularApp-Core-AppInitializer" */,
 			);
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
@@ -123,8 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08559307109C7D6ED452C987 /* AppDelegate.swift in Sources */,
 				1DA2FAB7EB08E567F7908B69 /* ContentView.swift in Sources */,
-				9AF78FA817CF4FDAB9F7755C /* ModularAppApp.swift in Sources */,
+				33A3C8E56DB9DF63B9614EA1 /* SceneDelegate.swift in Sources */,
+				FCBC9E842E9F052A90C1350C /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +342,14 @@
 				minimumVersion = 0.0.1;
 			};
 		};
+		923F42FC4446649943F8207E /* XCRemoteSwiftPackageReference "ModularApp-Core-AppInitializer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alesh14/ModularApp-Core-AppInitializer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
 		A2B8E5BFE80D84CA165B509B /* XCRemoteSwiftPackageReference "ModularApp-Core-UI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alesh14/ModularApp-Core-UI";
@@ -363,6 +383,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A2B8E5BFE80D84CA165B509B /* XCRemoteSwiftPackageReference "ModularApp-Core-UI" */;
 			productName = CoreUI;
+		};
+		9AA12F73F8E0DB19F1C7B782 /* SpaceCore-AppInitializer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 923F42FC4446649943F8207E /* XCRemoteSwiftPackageReference "ModularApp-Core-AppInitializer" */;
+			productName = "SpaceCore-AppInitializer";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
