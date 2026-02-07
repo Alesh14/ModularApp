@@ -38,7 +38,7 @@ struct ProcessBuilder {
         task.standardOutput = pipe
         task.standardError = pipe
         task.arguments = ["-c", command]
-        task.executableURL = URL(filePath: "/bin/sh")
+        task.executableURL = URL(fileURLWithPath: "/bin/sh")
         task.standardInput = nil
 
         try! task.run()

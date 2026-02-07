@@ -33,7 +33,7 @@ struct RepoSync {
             return
         }
 
-        FileManager.default.changeCurrentDirectoryPath(repoRoot.path())
+        FileManager.default.changeCurrentDirectoryPath(repoRoot.path)
 
         let config = try ConfigSupport.parse(repoRoot: repoRoot, env: env)
 
@@ -82,8 +82,9 @@ extension RepoSync: CommandPlugin {
             exit(1)
         }
 
+        let packageDir = URL(fileURLWithPath: context.package.directory.string)
         try process(
-            repoRoot: context.package.directoryURL.deletingLastPathComponent(),
+            repoRoot: packageDir.deletingLastPathComponent(),
             arguments: arguments
         )
     }
@@ -94,7 +95,8 @@ import XcodeProjectPlugin
 
 extension RepoSync: XcodeCommandPlugin {
     func performCommand(context: XcodePluginContext, arguments: [String]) throws {
-        try process(repoRoot: context.xcodeProject.directoryURL, arguments: arguments)
+        let projectDir = URL(fileURLWithPath: context.xcodeProject.directory.string)
+        try process(repoRoot: projectDir, arguments: arguments)
     }
 }
 #endif

@@ -4,8 +4,8 @@ import PackagePlugin
 enum ConfigSupport {
     static func parse(repoRoot: URL, env: String) throws -> [(String, String)] {
         let configURL = repoRoot
-            .appending(component: "Module-Config")
-            .appending(component: env)
+            .appendingPathComponent("Module-Config")
+            .appendingPathComponent(env)
             .appendingPathExtension("config")
         return try parse(at: configURL)
     }
