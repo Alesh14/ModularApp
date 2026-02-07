@@ -11,6 +11,10 @@ packages:
     path: ModularApp-Core-Network
   CoreUI:
     path: ModularApp-Core-UI
+  FeatureHome:
+    path: ModularApp-Feature-Home
+  ModularAppTools:
+    path: RepoSync
 
 targets:
   ModularApp:
@@ -31,6 +35,7 @@ targets:
     dependencies:
       - package: CoreNetwork
       - package: CoreUI
+      - package: FeatureHome
     scheme:
       testTargets: []
       gatherCoverageData: false

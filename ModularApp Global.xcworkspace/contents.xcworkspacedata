@@ -14,6 +14,12 @@
       location = "group:ModularApp-Feature-Home/ModularApp-Feature-Home.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:ModularApp-Feature-Settings/ModularApp-Feature-Settings.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ModularApp-Feature-Profile/ModularApp-Feature-Profile.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:RepoSync">
    </FileRef>
 </Workspace>

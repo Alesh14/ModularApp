@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DA2FAB7EB08E567F7908B69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C2174FA5E37597D7309FBE /* ContentView.swift */; };
 		2D26A59A11A3C88C30AB9967 /* CoreUI in Frameworks */ = {isa = PBXBuildFile; productRef = 859EA341F08A96C3ACF98658 /* CoreUI */; };
+		6267F5539509D9D7EE485CC7 /* FeatureHome in Frameworks */ = {isa = PBXBuildFile; productRef = 1DF2DFED580989DDDEF94644 /* FeatureHome */; };
 		9AF78FA817CF4FDAB9F7755C /* ModularAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0287B1766CB83D3BDC70F53B /* ModularAppApp.swift */; };
 		BAD3BBD6405E4F70AFB626BE /* CoreNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 27099D77F2A95B2958EF090C /* CoreNetwork */; };
 /* End PBXBuildFile section */
@@ -17,7 +18,9 @@
 		0287B1766CB83D3BDC70F53B /* ModularAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModularAppApp.swift; sourceTree = "<group>"; };
 		58C2174FA5E37597D7309FBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6D13911164C2FC24E4B54220 /* ModularApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ModularApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F352D10BC8E6A98B8A3ED25 /* RepoSync */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RepoSync; path = RepoSync; sourceTree = SOURCE_ROOT; };
 		97EE5828513329704C011342 /* ModularApp-Core-UI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "ModularApp-Core-UI"; path = "ModularApp-Core-UI"; sourceTree = SOURCE_ROOT; };
+		9D3E092C9821BA1909D046D9 /* ModularApp-Feature-Home */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "ModularApp-Feature-Home"; path = "ModularApp-Feature-Home"; sourceTree = SOURCE_ROOT; };
 		CD4CC10D3436E5A21B5E2AE4 /* ModularApp-Core-Network */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "ModularApp-Core-Network"; path = "ModularApp-Core-Network"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -28,6 +31,7 @@
 			files = (
 				BAD3BBD6405E4F70AFB626BE /* CoreNetwork in Frameworks */,
 				2D26A59A11A3C88C30AB9967 /* CoreUI in Frameworks */,
+				6267F5539509D9D7EE485CC7 /* FeatureHome in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +60,8 @@
 			children = (
 				CD4CC10D3436E5A21B5E2AE4 /* ModularApp-Core-Network */,
 				97EE5828513329704C011342 /* ModularApp-Core-UI */,
+				9D3E092C9821BA1909D046D9 /* ModularApp-Feature-Home */,
+				8F352D10BC8E6A98B8A3ED25 /* RepoSync */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -88,6 +94,7 @@
 			packageProductDependencies = (
 				27099D77F2A95B2958EF090C /* CoreNetwork */,
 				859EA341F08A96C3ACF98658 /* CoreUI */,
+				1DF2DFED580989DDDEF94644 /* FeatureHome */,
 			);
 			productName = ModularApp;
 			productReference = 6D13911164C2FC24E4B54220 /* ModularApp.app */;
@@ -115,6 +122,8 @@
 			packageReferences = (
 				334DA79ECD87CC08949BBDD4 /* XCLocalSwiftPackageReference "ModularApp-Core-Network" */,
 				2837FDA8DA590FF6A495421B /* XCLocalSwiftPackageReference "ModularApp-Core-UI" */,
+				E0893A3E5673F4F805E6674B /* XCLocalSwiftPackageReference "ModularApp-Feature-Home" */,
+				615E5276196D154FDD78BEAB /* XCLocalSwiftPackageReference "RepoSync" */,
 			);
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
@@ -329,9 +338,21 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = "ModularApp-Core-Network";
 		};
+		615E5276196D154FDD78BEAB /* XCLocalSwiftPackageReference "RepoSync" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = RepoSync;
+		};
+		E0893A3E5673F4F805E6674B /* XCLocalSwiftPackageReference "ModularApp-Feature-Home" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "ModularApp-Feature-Home";
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1DF2DFED580989DDDEF94644 /* FeatureHome */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureHome;
+		};
 		27099D77F2A95B2958EF090C /* CoreNetwork */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CoreNetwork;

@@ -1,47 +1,29 @@
 import SwiftUI
 import CoreUI
+import FeatureHome
 
 struct ContentView: View {
     @State private var selectedTab = 0
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            HomeTab()
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                }
-                .tag(0)
+            HomeView(
+                viewModel: HomeViewModel(
+                    getHomeItemsUseCase: GetHomeItemsUseCase(
+                        repository: HomeRepository()
+                    )
+                )
+            )
+            .tabItem {
+                Label("Home", systemImage: "house")
+            }
+            .tag(0)
 
             SettingsTab()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
                 .tag(1)
-        }
-    }
-}
-
-// MARK: - Home Tab
-
-struct HomeTab: View {
-    var body: some View {
-        NavigationStack {
-            VStack(spacing: 24) {
-                Text("Welcome to ModularApp")
-                    .font(Theme.titleFont)
-
-                Text("This app demonstrates modular iOS architecture with RepoSync.")
-                    .font(Theme.bodyFont)
-                    .foregroundColor(Theme.secondaryColor)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-
-                PrimaryButton(title: "Get Started") {
-                    print("Button tapped!")
-                }
-                .padding(.horizontal, 32)
-            }
-            .navigationTitle("Home")
         }
     }
 }
